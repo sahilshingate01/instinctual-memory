@@ -478,7 +478,7 @@ impl BulkWriter {
             .truncate(false)
             .open(&lock_path)
             .map_err(|e| Error::io(&lock_path, e))?;
-        // Wait briefly: lock can be held by concurrent process
+        // Wait briefly: a lock can be held for a moment by a child process
         // that has not exec'd yet, or by a short write in another process.
         let deadline = std::time::Instant::now() + std::time::Duration::from_secs(5);
         while fs4::FileExt::try_lock_exclusive(&lock).is_err() {
