@@ -136,7 +136,7 @@ impl LexicalSearch {
                 ));
             }
         }
-        // Pass 2: matched words weighted by document frequency
+        // Pass 2: a matched word counts by how rare it is among eligible
         // facts (inverse document frequency); common words barely count.
         let n = candidates.len() as f32;
         let weights: Vec<f32> = terms
