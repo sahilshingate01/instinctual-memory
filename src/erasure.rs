@@ -260,7 +260,7 @@ fn rewrite_history(repo: &GitRepo, needles: &Needles) -> Result<usize> {
             }
             let Some(oid) = oid else { continue };
             // Statements only live in Markdown. JSON state (controls,
-            // checkpoint receipts and dispositions hold ids by design.
+            // receipts, dispositions, checkpoint) holds ids by design.
             if !path.ends_with(".md") {
                 continue;
             }
