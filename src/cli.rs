@@ -34,6 +34,7 @@ use crate::repo::GitRepo;
 #[command(
     name = "mem",
     version,
+    author,
     about = "Git-first durable memory for AI agents",
     long_about = "Git-first durable memory for AI agents.\n\nBackfill Claude Code, Codex, and OpenCode sessions and AGENTS.md-style files into a journal, consolidate them into curated facts in a bare Git repository, search facts and sessions together, and write a project's memory back into its AGENTS.md. Serve the same memory to agents over MCP (`mem serve --stdio`)."
 )]
