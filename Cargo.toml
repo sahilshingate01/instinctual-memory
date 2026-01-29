@@ -1,6 +1,6 @@
 [package]
 name = "mem"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
 authors = ["Sahil Shingate <sahilshingate0@gmail.com>"]
 description = "Git-first durable memory for AI agents: backfill sessions, consolidate facts, search, and write back to AGENTS.md"

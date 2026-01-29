@@ -195,6 +195,10 @@ cargo clippy --all-targets
 
 The product requirements are in `PRD-portable-agent-memory.md`.
 
+## Author
+
+Sahil Shingate
+
 ## License
 
 Apache-2.0
